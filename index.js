@@ -115,6 +115,6 @@ io.on("connection", (socket) => {
 });
 
 // Iniciar el servidor HTTP en el puerto 3000 y mostrar un mensaje en la consola
-httpServer.listen(3000, () => {
+httpServer.listen(8000, () => {
   console.log("El servidor está ejecutándose en el puerto 3000");
 });
