@@ -12,8 +12,10 @@ const io = new Server(httpServer, {
   }
 }); // Inicializar el servidor de Socket.io para gestionar conexiones WebSocket
 
+const conexion = "mongodb+srv://senaproyecto020:EADuG1AU8UiErYDd@reserva.2aw88hj.mongodb.net/?retryWrites=true&w=majority&appName=reserva";
+
 // Conéctate a MongoDB
-mongoose.connect("mongodb://127.0.0.1:27017/reserva", {
+mongoose.connect(conexion, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
